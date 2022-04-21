@@ -15,7 +15,9 @@ pipeline {
         stage('Build') {
             steps {
                 dir("/var/lib/jenkins/workspace/demo-pieline-2/my-app") {
-				sh 'mvn -B -DskipTests clean package --file pom.xml -X'
+				sh "echo 'coe+best2022' | sudo -S mvn -Dmaven.test.failure.ignore=true clean install package"
+			
+				//sh 'mvn -B -DskipTests clean package --file pom.xml -X'
                 }
             }
         }
