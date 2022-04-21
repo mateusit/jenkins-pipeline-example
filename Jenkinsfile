@@ -7,9 +7,9 @@ pipeline {
     stages {
         stage('Initialize'){
             steps{
-                echo "PATH = ${M2_HOME}/bin:${PATH}"
+                //echo "PATH = ${M2_HOME}/bin:${PATH}"
                 //echo "M2_HOME = /opt/maven"
-				echo "M2_HOME =/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/MAVEN/bin"
+				//echo "M2_HOME =/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/MAVEN/bin"
             }
         }
         stage('Build') {
